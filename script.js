@@ -1,5 +1,10 @@
-const photo = (id) =>
-      `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=80`;
+const photo = (id) => {
+  if (/\.(png|jpe?g|webp)$/i.test(id)) {
+    return id.startsWith("Imagenes/") ? id : `Imagenes/${id}`;
+  }
+
+  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=80`;
+};
 
     // Preguntas y respuestas posibles. Cada tag suma puntos a un estilo.
     const questions = [
@@ -94,12 +99,12 @@ const photo = (id) =>
           {
             label: "Colores neutros",
             tag: "classic",
-            image: "photo-1494438639946-1ebd1d20bf85"
+            image: "zapatos_clasic.jpg"
           },
           {
             label: "Color y personalidad",
             tag: "bold",
-            image: "photo-1492684223066-81342ee5ff30"
+            image: "zapatos_leopardo.jpg"
           }
         ]
       }
@@ -107,35 +112,58 @@ const photo = (id) =>
 
     // Productos/estilos que pueden recomendarse al terminar el test.
     const products = {
-      urban: {
-        name: "The Urban",
-        description:
-          "Tu estilo es urbano, actual y versátil. " +
-          "Busca una zapatilla que acompañe tu ritmo por la ciudad.",
-        image: "photo-1528701800489-20be3c4ea2c8"
-      },
-      sport: {
-        name: "The Active",
-        description:
-          "Te atraen el movimiento y la energía. " +
-          "Explora modelos deportivos adecuados para tu actividad.",
-        image: "photo-1542291026-7eec264c27ff"
-      },
-      classic: {
-        name: "The Essential",
-        description:
-          "Prefieres un diseño atemporal que combine " +
-          "fácilmente con diferentes looks.",
-        image: "photo-1549298916-b41d501d3772"
-      },
-      bold: {
-        name: "The Statement",
-        description:
-          "Te gusta expresar tu personalidad con diseños " +
-          "llamativos y detalles diferentes.",
-        image: "photo-1552346154-21d32810aba3"
-      }
-    };
+  urban: {
+    name: "The Urban",
+    description:
+      "Tu estilo es urbano, actual y versátil. " +
+      "Busca una zapatilla que acompañe tu ritmo por la ciudad.",
+    images: [
+      "zapatos_comodos.png",
+      "zapatos_urban_marron.png",
+      "zapatos_urban_plata.png",
+      "zapatos_urban.png"
+    ]
+  },
+
+  sport: {
+    name: "The Active",
+    description:
+      "Te atraen el movimiento y la energía. " +
+      "Explora modelos deportivos adecuados para tu actividad.",
+    images: [
+      "zapatos_deportivas_gris.jpg",
+      "zapatos_deportivas_negras.jpg",
+      "zapatos_deportivas_verde.jpg",
+      "zapatos_deportivas_azules.png"
+    ]
+  },
+
+  classic: {
+    name: "The Essential",
+    description:
+      "Prefieres un diseño atemporal que combine " +
+      "fácilmente con diferentes looks.",
+    images: [
+      "zapatos_clasic.jpg",
+      "zapatos_negras_gris.jpg",
+      "zapatos_beige.png",
+      "zapatos_rositas.png"
+    ]
+  },
+
+  bold: {
+    name: "The Statement",
+    description:
+      "Te gusta expresar tu personalidad con diseños " +
+      "llamativos y detalles diferentes.",
+    images: [
+      "zapatos_leopardo.jpg",
+      "zapatos_colores.png",
+      "zapatos_diferentes.png",
+      "zapatos_rojos.png"
+    ]
+  }
+};
 
     // Estado del test: pregunta actual y puntuación de cada estilo.
     let current = 0;
@@ -213,12 +241,19 @@ const photo = (id) =>
       );
       const product = products[winner];
 
-      $("counter").textContent = "TU MATCH";
+      $("counter").textContent = "LO MÁS TU";
       $("bar").style.width = "100%";
       $("resultTitle").textContent = product.name;
       $("resultDescription").textContent = product.description;
-      $("resultImage").src = photo(product.image);
-      $("resultImage").alt = product.name;
+      const gallery = $("resultGallery");
+      gallery.replaceChildren();
+
+      product.images.forEach(image => {
+        const img = document.createElement("img");
+        img.src = photo(image);
+        img.alt = product.name;
+        gallery.append(img);
+      });
 
       show("result");
     }
@@ -227,6 +262,6 @@ const photo = (id) =>
     $("start").addEventListener("click", startQuiz);
     $("restart").addEventListener("click", () => {
       show("welcome");
-      $("counter").textContent = "TU ESTILO";
+      $("counter").textContent = ".";
       $("bar").style.width = "0";
     });

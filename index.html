@@ -15,7 +15,7 @@
     <!-- Cabecera con el nombre del proyecto y el contador -->
     <header class="top">
       <div class="brand">YOUR NEXT STEP</div>
-      <div class="counter" id="counter">TU ESTILO</div>
+      <div class="counter" id="counter">.</div>
       <img src="Imagenes/logo_marca.png" alt="Logo de la marca" class="logo">
     </header>
 
@@ -46,18 +46,22 @@
     </section>
 
     <!-- Pantalla final con el producto recomendado -->
-    <section id="result" class="hidden result">
-      <p>RESULTADO FINAL</p>
-      <h1 id="resultTitle">Tu estilo tiene nombre.</h1>
-      <img id="resultImage" alt="Zapatilla recomendada">
-      <p class="intro" id="resultDescription"></p>
-      <button class="primary" id="restart">
-        Volver a empezar ↻
-      </button>
-      <p class="small">
-        Recomendación orientativa basada en tus elecciones.
-      </p>
-    </section>
+<section id="result" class="hidden result">
+  <p>RESULTADO FINAL</p>
+  <h1 id="resultTitle">Tu estilo tiene nombre.</h1>
+
+  <div id="resultGallery" class="gallery"></div>
+
+  <p class="intro" id="resultDescription"></p>
+
+  <button class="primary" id="restart">
+    Volver a empezar ↻
+  </button>
+
+  <p class="small">
+    Recomendación orientativa basada en tus elecciones.
+  </p>
+</section>
   </main>
   <script src="script.js" defer></script>
 
