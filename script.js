@@ -177,7 +177,6 @@ const photo = (id) => {
         $(id).classList.toggle("hidden", id !== section);
       });
     }
-
     // Reinicia los puntos y comienza el cuestionario.
     function startQuiz() {
       current = 0;
