@@ -144,7 +144,7 @@ const photo = (id) => {
       "Prefieres un diseño atemporal que combine " +
       "fácilmente con diferentes looks.",
     images: [
-      "zapatos_clasic.jpg",
+      "zapatos_clasic.png",
       "zapatos_negras_gris.png",
       "zapatos_beige.png",
       "zapatos_rositas.png"
