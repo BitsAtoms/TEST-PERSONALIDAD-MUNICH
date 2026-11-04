@@ -25,13 +25,20 @@
       height: auto;
       object-fit: contain;
       display: block;
+      align-items: end;
+    }
+    .logoX {
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+      display: block;
     }
 
     /* Cabecera: marca y contador de preguntas */
     .top {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 16px;
       margin-bottom: 36px;
     }
@@ -46,7 +53,8 @@
 
     /* Estilo de los títulos principales */
     h1 {
-      font-size: clamp(36px, 5vw, 64px);
+      font-family: "Arial Black", sans-serif;
+      font-size: clamp(48px, 7vw, 90px);
       line-height: 1.05;
       margin: 12px 0;
       letter-spacing: -2px;
@@ -107,9 +115,9 @@
       border-radius: 18px;
       padding: 0;
       overflow: hidden;
-      background: white;
+      background: rgb(8, 8, 8);
       text-align: left;
-      color: #171717;
+      color: #fcf9f9;
       transition: transform .15s, border-color .15s;
     }
 
@@ -176,6 +184,8 @@
   min-height: 100vh;
   overflow: hidden;
   isolation: isolate;
+  border: 5px solid #171717;
+  border-radius: 20px;
 }
 
 .gif-background {
@@ -191,6 +201,8 @@
 }
 
 .welcome-content {
+  margin: 25px;
+  margin-top: 50px;
   position: relative;
   z-index: 1;
 }

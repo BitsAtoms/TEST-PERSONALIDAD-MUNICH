@@ -14,22 +14,22 @@ const photo = (id) => {
           {
             label: "Explorar la ciudad",
             tag: "urban",
-            image: "photo-1519608487953-e999c86e7455"
+            image: "explorar-ciudad.jpg"
           },
           {
             label: "Salir a entrenar",
             tag: "sport",
-            image: "photo-1538805060514-97d9cc17730c"
+            image: "salir-entrena.webp"
           },
           {
             label: "Un paseo tranquilo",
             tag: "classic",
-            image: "photo-1470770841072-f978cf4d019e"
+            image: "plan-paseo.png"
           },
           {
             label: "Un plan diferente",
             tag: "bold",
-            image: "photo-1529139574466-a303027c1d8b"
+            image: "plan-diferente.jpeg"
           }
         ]
       },
@@ -39,17 +39,17 @@ const photo = (id) => {
           {
             label: "Streetwear",
             tag: "urban",
-            image: "photo-1523398002811-999ca8dec234"
+            image: "look-streetwear.png"
           },
           {
             label: "Deportivo",
             tag: "sport",
-            image: "photo-1534438327276-14e5300c3a48"
+            image: "look-deportivo.png"
           },
           {
             label: "Minimalista",
             tag: "classic",
-            image: "photo-1490481651871-ab68de25d43d"
+            image: "look-minimalista.png"
           },
           {
             label: "Atrevido",
@@ -64,22 +64,22 @@ const photo = (id) => {
           {
             label: "Estilo urbano",
             tag: "urban",
-            image: "photo-1528701800489-20be3c4ea2c8"
+            image: "zapatos_urban.png"
           },
           {
             label: "Sensación deportiva",
             tag: "sport",
-            image: "photo-1542291026-7eec264c27ff"
+            image: "zapatos_deportivas_azules.png"
           },
           {
             label: "Versatilidad",
             tag: "classic",
-            image: "photo-1549298916-b41d501d3772"
+            image: "zapatos_clasic.jpg"
           },
           {
             label: "Diseño original",
             tag: "bold",
-            image: "photo-1552346154-21d32810aba3"
+            image: "zapatos_leopardo.jpg"
           }
         ]
       },
@@ -89,22 +89,22 @@ const photo = (id) => {
           {
             label: "Asfalto y ciudad",
             tag: "urban",
-            image: "photo-1519501025264-65ba15a82390"
+            image: "ciudad.jpeg"
           },
           {
             label: "Movimiento y energía",
             tag: "sport",
-            image: "photo-1461896836934-ffe607ba8211"
+            image: "movimiento_y_energia.jpeg"
           },
           {
             label: "Colores neutros",
             tag: "classic",
-            image: "zapatos_clasic.jpg"
+            image: "interiorismo-vintage.jpg"
           },
           {
             label: "Color y personalidad",
             tag: "bold",
-            image: "zapatos_leopardo.jpg"
+            image: "color_personalidad.webp"
           }
         ]
       }
