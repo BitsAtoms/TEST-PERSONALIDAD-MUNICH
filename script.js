@@ -49,7 +49,7 @@ const photo = (id) => {
           {
             label: "Minimalista",
             tag: "classic",
-            image: "look-minimalista.png"
+            image: "neutral_style.png"
           },
           {
             label: "Atrevido",
@@ -74,12 +74,12 @@ const photo = (id) => {
           {
             label: "Versatilidad",
             tag: "classic",
-            image: "zapatos_clasic.jpg"
+            image: "zapatos_clasic.png"
           },
           {
             label: "Diseño original",
             tag: "bold",
-            image: "zapatos_leopardo.jpg"
+            image: "zapatos_leopardo.png"
           }
         ]
       },
@@ -94,7 +94,7 @@ const photo = (id) => {
           {
             label: "Movimiento y energía",
             tag: "sport",
-            image: "movimiento_y_energia.jpeg"
+            image: "movimiento_y_energia.jpg"
           },
           {
             label: "Colores neutros",
@@ -131,9 +131,9 @@ const photo = (id) => {
       "Te atraen el movimiento y la energía. " +
       "Explora modelos deportivos adecuados para tu actividad.",
     images: [
-      "zapatos_deportivas_gris.jpg",
-      "zapatos_deportivas_negras.jpg",
-      "zapatos_deportivas_verde.jpg",
+      "zapatos_deportivas_gris.png",
+      "zapatos_deportivas_negras.png",
+      "zapatos_deportivas_verde.png",
       "zapatos_deportivas_azules.png"
     ]
   },
@@ -145,7 +145,7 @@ const photo = (id) => {
       "fácilmente con diferentes looks.",
     images: [
       "zapatos_clasic.jpg",
-      "zapatos_negras_gris.jpg",
+      "zapatos_negras_gris.png",
       "zapatos_beige.png",
       "zapatos_rositas.png"
     ]
@@ -157,7 +157,7 @@ const photo = (id) => {
       "Te gusta expresar tu personalidad con diseños " +
       "llamativos y detalles diferentes.",
     images: [
-      "zapatos_leopardo.jpg",
+      "zapatos_leopardo.png",
       "zapatos_colores.png",
       "zapatos_diferentes.png",
       "zapatos_rojos.png"
