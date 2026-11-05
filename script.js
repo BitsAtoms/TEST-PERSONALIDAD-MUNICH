@@ -1,5 +1,5 @@
 const photo = (id) => {
-  if (/\.(png|jpe?g|webp)$/i.test(id)) {
+  if (/\.(png|jpe?g|webp|gif)$/i.test(id)) {
     return id.startsWith("Imagenes/") ? id : `Imagenes/${id}`;
   }
 
